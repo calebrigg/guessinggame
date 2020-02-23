@@ -33,7 +33,7 @@ const GameScreen = props => {
 
     const nextGuessHandler = direction => {
         if ( (direction=='less' && currentGuess < props.userChoice) || (direction === 'more' && currentGuess > props.userChoice) ){
-            Alert.alert('Don\'t Lie to Me', 'Atone For Your Sins', [{text: 'Repent', style: 'cancel' }]);
+            Alert.alert('Don\'t Lie to Me', 'Tell The Truth.', [{text: 'Sorry', style: 'cancel' }]);
             return;
         }
         if(direction === 'less') {
